@@ -11,9 +11,11 @@ export class AppComponent {
 
   constructor(
       private domSanitizer: DomSanitizer,
-      private iconRegistry: MdIconRegistry) {
-    this.registerIcons(new Map<string, string>([
-      [ 'logo', 'assets/ngshop-logo.svg' ]
+      private iconRegistry: MdIconRegistry
+      ) {
+
+       this.registerIcons(new Map<string, string>([
+          [ 'logo', 'assets/ngshop-logo.svg' ]
     ]));
   }
 

@@ -6,6 +6,8 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { MaterialModule } from '@angular/material';
 
+import { ProductService } from './shared/services';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -16,7 +18,7 @@ import { MaterialModule } from '@angular/material';
     HttpModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
