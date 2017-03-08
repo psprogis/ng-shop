@@ -7,10 +7,12 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from '@angular/material';
 
 import { ProductService } from './shared/services';
+import { HomeComponent } from './home';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
